@@ -7,9 +7,9 @@ RUN apt-get update -y \
  && apt-get install -y curl glib2.0-dev gpg libglu1-mesa-dev libglib2.0-dev libvips-dev libvips-tools nfs-common xvfb xz-utils expect unzip \
  && rm -rf /var/lib/apt/lists/*
 
-WORKDIR /hello-aws-docker
+WORKDIR /prac-aws-docker
 
-COPY --chown=node:node package.json /hello-aws-docker/package.json
+COPY --chown=node:node package.json /prac-aws-docker/package.json
 
 RUN npm install -g npm \
 && npm i -g @nestjs/cli \
