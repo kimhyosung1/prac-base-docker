@@ -32,4 +32,4 @@ jobs:
         env:
           ECR: ${{ steps.login-ecr.outputs.registry }}
           TAG: ${{ github.sha }}
-        run: docker buildx build --push --platform linux/arm64/v8,linux/amd64 -t ${ECR}/capa_base:latest -t ${ECR}/capa_base:${TAG} .
+        run: docker buildx build --push --platform linux/arm64/v8,linux/amd64 -t ${ECR}/khs_base:latest -t ${ECR}/khs_base:${TAG} .
