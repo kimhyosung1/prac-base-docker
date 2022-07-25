@@ -2,5 +2,4 @@
 
 ## Repository URL
 
-> 442595548368.dkr.ecr.ap-northeast-2.amazonaws.com/capa_base
-
+> 591362340905.dkr.ecr.ap-northeast-2.amazonaws.com/capa_base
