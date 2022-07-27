@@ -34,3 +34,5 @@ jobs:
           # TAG: ${{ github.sha }}
           TAG: khs_tag
         run: docker buildx build --push --platform linux/arm64/v8,linux/amd64 -t ${ECR}/khs_base:latest -t ${ECR}/khs_base:${TAG} .
+
+# 
